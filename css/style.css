@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*
+    全局样式定义
+*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, strong, var,b, dl, dt, dd, ol, ul, li, form, label, legend,table, footer, header, hgroup,menu, nav, output, ruby, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body{font-family:Arial, Helvetica, sans-serif,"微软雅黑"; font-size:12px; color:#333}
+img{border:none}
+a{color:#fff; text-decoration:none}
+li{list-style:none}
+.clear{clear:both}
+
+
+
+/*
+    header
+*/
+#header{background:url(../images/headerbg.png) repeat-x; height:110px; width:100%; height:110px; position:absolute; left:0; top:0}
+.mainbox_box{width:960px; height:auto; margin:0 auto}
+.logo{padding:25px 0 0 0; float:left}
+.menu{width:560px; float:right}
+.submenu{width:130px; height:20px; line-height:20px; background:#999; color:#fff; float:right} 
+.submenu a{color:#fff; padding:0 15px}
+.submenu a:hover{color:#333;} 
+.mainmenu ul li{float:left; width:76px; height:27px; margin:30px 8px 0 8px; display:inline; position:relative; font-size:16px; text-align:center; line-height:26px}
+.menu_out a{width:76px; height:27px; color:#333; position:absolute; top:0; left:0; white-space:nowrap}
+.menu_out a:hover,.menu_hover{width:76px; height:27px; color:#fff; background:url(../images/menubg.png) no-repeat}
+.menu_hover a{width:76px; height:27px; color:#fff; position:absolute; top:0; left:0; white-space:nowrap }
+/*
+    content
+*/
+#content{width:100%; height:auto}
+.aboutbanner{width:100%; background:url(../images/broadbg.png) repeat-x; height:400px; margin:100px 0 0 0}
+.aboutimg{height:400px; background:url(../images/aboutimg.jpg) no-repeat center top;width:100%; }
+.menu_title{width:958px; height:24px;  margin:25px auto 15px auto}
+.diggerlab_img{width:368px; height:225px; float:left; margin:20px 20px 0 0}
+.diggerlab_txt{padding:15px 0; float:right; font-size:18px; line-height:27px; width:560px; font-family:Arial, Helvetica, sans-serif; color:#666}
+.diggerlab_txt p{padding:0 0 10px 0}
+.products_banner{ width:100%; height:452px; background:url(../images/product.jpg) no-repeat center top; margin:20px auto}
+.ssq_txt{font-size:18px; line-height:26px; }
+.ssq_txt p{padding-bottom:8px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
