@@ -22,7 +22,8 @@ img{border:none}
 a{color:#fff; text-decoration:none}
 li{list-style:none}
 .clear{clear:both}
-
+.floleft{ float:left}
+.floright{ float: right}
 
 
 /*
@@ -86,4 +87,12 @@ li{list-style:none}
 .team_js .name{ font-size:28px; padding-bottom:17px}
 .team_js .txt{ font-size:16px; line-height:28px}
 
-.advisors_banner{width:100%; background:url(../images/advisors_bg.jpg) no-repeat right top;  height:320px; margin:100px 0 0 0;}
+.advisors_banner{width:100%; background:url(../images/advisors_bg.jpg) no-repeat right top;  height:350px; margin:100px 0 0 0;}
+.advi_name{font-size:18px;}
+.advisors_list{width:411px; height:100px; background:url(../images/guwenbg.gif) no-repeat right top; color:#fff; margin:15px 10px;}
+.advisors_list, .advisors_list a{color:#fff; }
+.advisors_list img{width:100px; height:100px; float:left}
+.advi_txt{font-size:16px; padding:5px 0; color:#ccc}
+.advisors_js{padding:8px; float:left}
+
+#footer{background:#F1F1F1; border-top:1px solid #EAEAEA; height:100px}
