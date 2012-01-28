@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <title>Untitled Document</title>
 </head>
 
@@ -46,7 +47,7 @@ Help, and get helped from strangers, that`s our vision of SuishenQ: “the Kindn
 	</div>
     
     <div class="team" id="team">
-    	<div class="diggerlab_kan"><a href="#kan"><img src="images/kan.jpg" alt="韩晓光" /></a>
+    	<div class="diggerlab_kan"><a href="#kan"><img src="images/kan.jpg" data-photo-org="images/kan.jpg"  data-photo-back="images/mike.jpg" alt="韩晓光" /></a>
    	    <div class="member_ingfo kan">Kan<br />(Co-founder)</div></div>
 
     	<div class="diggerlab_yefeng"><a href="#yefeng"><img src="images/yefeng.jpg" alt="yefeng" /></a>
@@ -65,23 +66,45 @@ Help, and get helped from strangers, that`s our vision of SuishenQ: “the Kindn
    	    <div class="member_ingfo ryan">ryan<br />(Co-founder)</div></div>
     </div>
     <div class="menu_title"><img src="images/team.jpg" alt="team" /></div>
-    <img src="images/kan_big.jpg" alt="kan" class="team_big" />
-    <span class="team_js">
-    	<p class="name">Xiaoguang Han (Co-founder)</p>
-        <p class="txt">
--DIGGERLB CEO & Founder<br />
+    <div id="member_intro">
+    </div>
+    <div id="kan" style="display:none">
+        <img src="images/kan_big.jpg" alt="kan" class="team_big" />
+        <span class="team_js">
+            <p class="name">Xiaoguang Han (Co-founder)</p>
+            <p class="txt">
+                -DIGGERLB CEO & Founder<br />
 
--1984 born in China.<br />
- 
--2003-2007 KEIO University (Faculty of Policy Management)<br />
- 
--2007-2009 KEIO University (Graduate School of Media and Governance, MA)<br />
- 
--2010 Benesse corporation<br />
- 
--2011- DIGGERLAB CEO & Founder<br />
-</p>
-    </span>
+                -1984 born in China.<br />
+                 
+                -2003-2007 KEIO University (Faculty of Policy Management)<br />
+                 
+                -2007-2009 KEIO University (Graduate School of Media and Governance, MA)<br />
+                 
+                -2010 Benesse corporation<br />
+                 
+                -2011- DIGGERLAB CEO & Founder<br />
+                </p>
+        </span>
+    </div>
+    <div id="mike" name="mike" style="display:none">
+        <img src="images/mike_big.jpg" alt="mike" class="team_big" />
+        <span class="team_js">
+            <p class="name">Mike Chen (Co-founder)</p>
+            <p class="txt">
+    -1982 born in China.<br />
+     
+    -2000-2004 Nanjing University of Technology (Mechtronics)<br />
+     
+    -2004-2009 CDC Software Shanghai / Denmark (Engineer, Consultant)<br />
+     
+    -2009-2011 Ubisoft Shanghai (Dev lead)<br />
+     
+    -2011- DIGGERLAB Co-founder<br />
+    </p>
+        </span>
+    </div>
+
     <div class="clear"></div>
     <div class="advisors_banner" id="advisors"></div>
     <div class="menu_title"><img src="images/mentor.jpg" alt="mentor" /></div>
@@ -114,8 +137,56 @@ Help, and get helped from strangers, that`s our vision of SuishenQ: “the Kindn
     
 </div>
 </div>
+<div>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
 
+</div>
 <div id="footer"></div>
+<script type="text/javascript">
+$('#member_intro').append($('#kan').html());
+$('.team img').live('mouseenter', function(){
+    $(this).attr('src', $(this).attr('data-photo-back'));
+}).live('mouseleave', function(){
+    $(this).attr('src', $(this).attr('data-photo-org'));
+}).live("click", function(event){
+    event.preventDefault();
+    var person_desc = $($(this).parent('a').attr('href')).html();
+    $('body').animate({scrollTop: $('#member_intro').prev('.menu_title').offset().top}, 400, null);
+    setTimeout(function(){
+        $('#member_intro').slideUp('slow', function(){
+            $('#member_intro').empty().append(person_desc).slideDown();
+        });    
+    }, 500)
+})
 
+$('.mainmenu a').click(function(event){
+    event.preventDefault();
+    $(this).parents('ul').children('li').removeClass('menu_hover').addClass('menu_out');
+    $(this).parent('li').addClass('menu_hover');
+    var em = $(this).attr('href');
+    var targetOffset = $(em).offset().top;
+    $('body').animate({scrollTop: targetOffset}, 800, null);
+})
+
+</script>
 </body>
 </html>
