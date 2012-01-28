@@ -117,7 +117,29 @@ Help, and get helped from strangers, that`s our vision of SuishenQ: “the Kindn
     
 </div>
 </div>
+<div>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
+    delete me <br>
 
+</div>
 <div id="footer"></div>
 <script type="text/javascript">
 $('#member_intro').append($('#kan').html());
@@ -128,9 +150,12 @@ $('.team img').live('mouseenter', function(){
 }).live("click", function(event){
     event.preventDefault();
     var person_desc = $($(this).parent('a').attr('href')).html();
-    $('#member_intro').slideUp('slow', function(){
-        $('#member_intro').empty().append(person_desc).slideDown();
-    });
+    $('body').animate({scrollTop: $('#member_intro').prev('.menu_title').offset().top}, 400, null);
+    setTimeout(function(){
+        $('#member_intro').slideUp('slow', function(){
+            $('#member_intro').empty().append(person_desc).slideDown();
+        });    
+    }, 500)
 })
 
 $('.mainmenu a').click(function(event){
