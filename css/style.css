@@ -52,6 +52,9 @@ li {
 	font-size:12px;
 	line-height:18px;
 }
+.fontred{
+	color:#990000
+	}
 /*
     header
 */
@@ -162,7 +165,7 @@ li {
 	width:368px;
 	height:255px;
 	float:left;
-	margin:20px 20px 0 0
+	margin:20px 20px 0 0;
 }
 .diggerlab_txt {
 	padding:15px 0;　
@@ -170,7 +173,6 @@ li {
 	font-size:18px;
 	line-height:27px;
 	width:560px;
-	color:#666; 
 	float:left
 }
 .diggerlab_txt p {
@@ -294,7 +296,10 @@ li {
 	width:234px;
 	height:318px;
 	float:left;
-	margin-top:8px
+	margin-top:8px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius:10px;
 }
 .team_js {
 	width:688px;
@@ -321,7 +326,7 @@ li {
 .advisors_list {
 	width:411px;
 	height:100px;
-	background:url(../images/guwenbg.gif) no-repeat right top;
+	background:url(../images/guwenbg.jpg) no-repeat right top;
 	color:#fff;
 	margin:15px 10px;
 }
