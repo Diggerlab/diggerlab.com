@@ -268,7 +268,11 @@ hr@diggerlab.com<br /><br /></p>
 </div>
 
 <script type="text/javascript">
-$('#member_intro').append($('#kan').html());
+var doc_position = 0;
+$(function(){
+    $('#member_intro').append($('#kan').html());    
+})
+
 $('.team img').live('mouseenter', function(){
     $(this).attr('src', $(this).attr('data-photo-back'));
 }).live('mouseleave', function(){
@@ -276,7 +280,7 @@ $('.team img').live('mouseenter', function(){
 }).live("click", function(event){
     event.preventDefault();
     var person_desc = $($(this).parent('a').attr('href')).html();
-    $('body').animate({scrollTop: $('#member_intro').prev('.menu_title').offset().top}, 400, null);
+    $('#content').animate({scrollTop: $('#member_intro').prev('.menu_title').offset().top + doc_position -150}, 400, null);
     setTimeout(function(){
         $('#member_intro').slideUp('slow', function(){
             $('#member_intro').empty().append(person_desc).slideDown();
@@ -290,7 +294,13 @@ $('.mainmenu a').click(function(event){
     $(this).parent('li').addClass('menu_hover');
     var em = $(this).attr('href');
     var targetOffset = $(em).offset().top;
-    $('#content').animate({scrollTop: targetOffset - 150}, 800, null);
+    if($(em).attr('id') != 'about'){
+        doc_position = targetOffset - 150 + doc_position;
+    }
+    else{
+        doc_position = 0;
+    }
+    $('#content').animate({scrollTop: (doc_position)}, 800, null);
 })
 
 </script>
