@@ -1,6 +1,6 @@
 @charset "utf-8";
 @font-face {
-	font-family: '微软雅黑';
+	font-family: 'opens';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
@@ -17,7 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 body {
-	font-family:"微软雅黑";
+	font-family:"opens", "微软雅黑", "Arial, Helvetica, sans-serif";
 	font-size:12px;
 	color:#333
 }
@@ -26,7 +26,7 @@ img {
 }
 a {
 	color:#333;
-	text-decoration:none
+	text-decoration:none;
 }
 a:hover {
 	color: #900;
@@ -315,7 +315,7 @@ li {
 	font-size:16px;
 	line-height:32px
 }
-.team_js .txt img{ margin:8px 4px 0 4px}
+.team_js .txt img{ margin:8px 8px 0 0px; cursor:pointer}
 
 .advisors_banner {
 	width:100%;
