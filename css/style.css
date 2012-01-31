@@ -357,9 +357,6 @@ li {
 	margin:30px 0 0 0;
 }
 
-
-
-
 #zzjs_net{
  font-size:12px;
  width:100％;
@@ -379,14 +376,13 @@ li {
  padding:0px 0 5px 0px;
  border-bottom:1px #ccc dotted;
  font-size:16px;
- cursor:pointer;
  color:#7B2116;
 }
 #zzjs_net dd{
  display:none;
  margin:0;
  padding:5px 0 5px 20px;
- background:#E5ECF9;
+ background:#eee;
  line-height:180%;
  font-size:14px
 }
