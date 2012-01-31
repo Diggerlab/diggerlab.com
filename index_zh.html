@@ -4,40 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-var lastFaqClick=null;//上次点击的zzjs_net
-window.onload=function(){
-  var zzjs_net=document.getElementById("zzjs_net");
-  var dls=zzjs_net.getElementsByTagName("dl");
-  for (var i=0,dl;dl=dls[i];i++){
-    var dt=dl.getElementsByTagName("dt")[0];//取得标题
-     dt.id = "zzjs_net_dt_"+(Math.random()*100);
-     dt.onclick=function(){
-       var p=this.parentNode;//取得父节点
-        if (lastFaqClick!=null&&lastFaqClick.id!=this.id){
-          var dds=lastFaqClick.parentNode.getElementsByTagName("dd");
-          for (var i=0,dd;dd=dds[i];i++)
-            dd.style.display='none';
-        }
-        lastFaqClick=this;
-        var dds=p.getElementsByTagName("dd");//取得该父节点所有的子节点，也就是所有的答案
-        var tmpDisplay='none';
-        if (gs(dds[0],'display')=='none')
-          tmpDisplay='block';
-        for (var i=0;i<dds.length;i++)
-          dds[i].style.display=tmpDisplay;
-      }
-  }
-}
-function gs(d,a){
-  if (d.currentStyle){
-    var curVal=d.currentStyle[a]
-  }else{
-    var curVal=document.defaultView.getComputedStyle(d, null)[a]
-  }
-  return curVal;
-}
-</script>
 <title>diggerlab</title>
 </head>
 
@@ -232,6 +198,7 @@ function gs(d,a){
     
     <div class="menu_title" id="jobs"><img src="images/jrwm.gif" alt="jobs" /></div>
     <div class="jobs_banner" ></div>
+    
 <ul id="zzjs_net">
   <li>
     <dl>
@@ -319,7 +286,6 @@ function gs(d,a){
 
 <br /><br /><br /><br /></p>
 
-
 </div>
   
    <div class="menu_title" id="Contact"><img src="images/contact.jpg" alt="jobs" /></div>
@@ -393,5 +359,42 @@ $('.mainmenu a').click(function(event){
 })
 
 </script>
+
+
+<script type="text/javascript">
+var lastFaqClick=null;//上次点击的zzjs_net
+window.onload=function(){
+  var zzjs_net=document.getElementById("zzjs_net");
+  var dls=zzjs_net.getElementsByTagName("dl");
+  for (var i=0,dl;dl=dls[i];i++){
+    var dt=dl.getElementsByTagName("dt")[0];//取得标题
+     dt.id = "zzjs_net_dt_"+(Math.random()*100);
+     dt.onclick=function(){
+       var p=this.parentNode;//取得父节点
+        if (lastFaqClick!=null&&lastFaqClick.id!=this.id){
+          var dds=lastFaqClick.parentNode.getElementsByTagName("dd");
+          for (var i=0,dd;dd=dds[i];i++)
+            dd.style.display='none';
+        }
+        lastFaqClick=this;
+        var dds=p.getElementsByTagName("dd");//取得该父节点所有的子节点，也就是所有的答案
+        var tmpDisplay='none';
+        if (gs(dds[0],'display')=='none')
+          tmpDisplay='block';
+        for (var i=0;i<dds.length;i++)
+          dds[i].style.display=tmpDisplay;
+      }
+  }
+}
+function gs(d,a){
+  if (d.currentStyle){
+    var curVal=d.currentStyle[a]
+  }else{
+    var curVal=document.defaultView.getComputedStyle(d, null)[a]
+  }
+  return curVal;
+}
+</script>
+
 </body>
 </html>
