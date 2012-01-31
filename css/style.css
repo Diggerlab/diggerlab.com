@@ -63,7 +63,7 @@ li {
 	background:url(../images/headerbg.png) repeat-x;
 	height:110px;
 	width:100%;
-	position:absolute;
+	position:fixed;
 	left:0;
 	top:0;
 	z-index:9999
@@ -147,6 +147,7 @@ li {
 	height:100%;
 	width:100%;
 }
+
 .aboutbanner {
 	width:100%;
 	background:url(../images/broadbg.png) repeat-x;
