@@ -68,6 +68,7 @@ li {
 	top:0;
 	z-index:9999
 }
+
 .mainbox_box {
 	width:960px;
 	height:auto;
@@ -147,7 +148,6 @@ li {
 	height:100%;
 	width:100%;
 }
-
 .aboutbanner {
 	width:100%;
 	background:url(../images/broadbg.png) repeat-x;
