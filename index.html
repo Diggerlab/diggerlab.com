@@ -112,7 +112,7 @@ Microsoft Research Fellow 2011<br />
             <p class="txt">
     2009-2011, Leading Developer, Ubisoft, China<br />
      
-    2010, Founder, Cnprog, China<br />
+    2010, Founder, CNProg, China<br />
      
     2007-2009, Consultant, CDC Software, Denmark<br />
      
@@ -309,7 +309,6 @@ Former CEO, Amazon Japan</p></span>
 </div>
 
 <script type="text/javascript">
-var doc_position = 0;
 $(function(){
     $('#member_intro').append($('#kan').html());    
 })
@@ -336,12 +335,12 @@ $('.mainmenu a').click(function(event){
     var em = $(this).attr('href');
     var targetOffset = $(em).offset().top;
     if($(em).attr('id') != 'about'){
-        doc_position = targetOffset - 140 + doc_position;
+        doc_position = targetOffset - 140 + $("#content").scrollTop();
     }
     else{
         doc_position = 0;
     }
-    $('#content').animate({scrollTop: (doc_position)}, 800, null);
+    $('#content').stop().clearQueue().animate({scrollTop: (doc_position)}, 800, null);
 })
 
 </script>

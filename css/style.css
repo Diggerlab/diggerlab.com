@@ -134,7 +134,7 @@ li {
     content
 */
 #content {
-	position:fixed;
+	position: absolute;
 	top:100px;
 	left:0;
 	bottom:0px;

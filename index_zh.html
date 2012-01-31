@@ -115,8 +115,8 @@
         <span class="team_js">
             <p class="name">陈刚 (技术, 联合创始人)</p>
             <p class="txt">
-   前育碧娱乐(UbiSoft)核心工程师. <br />
-   Cnprog.com 创始人.<br />
+   前育碧娱乐(Ubisoft)核心工程师. <br />
+   CNProg.com 创始人.<br />
    2年海外(丹麦)工作经验. <br />
    曾任CDC Software高级工程师, 技术顾问. <br />
     本科毕业于南京工业大学. <br />
@@ -306,7 +306,6 @@
 </div>
 
 <script type="text/javascript">
-var doc_position = 0;
 $(function(){
     $('#member_intro').append($('#kan').html());    
 })
@@ -333,14 +332,13 @@ $('.mainmenu a').click(function(event){
     var em = $(this).attr('href');
     var targetOffset = $(em).offset().top;
     if($(em).attr('id') != 'about'){
-        doc_position = targetOffset - 140 + doc_position;
+        doc_position = targetOffset - 140 + $("#content").scrollTop();
     }
     else{
         doc_position = 0;
     }
-    $('#content').animate({scrollTop: (doc_position)}, 800, null);
+    $('#content').stop().clearQueue().animate({scrollTop: (doc_position)}, 800, null);
 })
-
 </script>
 </body>
 </html>
