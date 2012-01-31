@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<title>diggerlab</title>
+<script src="scripts/jquery.min.js"></script>
+<title>滴博网络 - Diggerlab</title>
 </head>
 
 <body>
@@ -115,8 +115,8 @@
         <span class="team_js">
             <p class="name">陈刚 (技术, 联合创始人)</p>
             <p class="txt">
-   前育碧娱乐(UbiSoft)核心工程师. <br />
-   Cnprog.com 创始人.<br />
+   前育碧娱乐(Ubisoft)核心工程师. <br />
+   CNProg.com 创始人.<br />
    2年海外(丹麦)工作经验. <br />
    曾任CDC Software高级工程师, 技术顾问. <br />
     本科毕业于南京工业大学. <br />
@@ -321,52 +321,6 @@
 	</div>
 </div>
 </div>
-
-<script type="text/javascript">
-var doc_position = 0;
-$(function(){
-    $('#member_intro').append($('#kan').html());    
-})
-
-$('.team img').live('mouseenter', function(){
-    $(this).attr('src', $(this).attr('data-photo-back'));
-}).live('mouseleave', function(){
-    $(this).attr('src', $(this).attr('data-photo-org'));
-}).live("click", function(event){
-    event.preventDefault();
-    var person_desc = $($(this).parent('a').attr('href')).html();
-    $('#content').animate({scrollTop: $('#member_intro').offset().top + doc_position -150}, 400, null);
-    setTimeout(function(){
-        $('#member_intro').slideUp('slow', function(){
-            $('#member_intro').empty().append(person_desc).slideDown();
-        });    
-    }, 500)
-})
-
-$('.mainmenu a').click(function(event){
-    event.preventDefault();
-    $(this).parents('ul').children('li').removeClass('menu_hover').addClass('menu_out');
-    $(this).parent('li').addClass('menu_hover');
-    var em = $(this).attr('href');
-    var targetOffset = $(em).offset().top;
-    if($(em).attr('id') != 'about'){
-        doc_position = targetOffset - 140 + doc_position;
-    }
-    else{
-        doc_position = 0;
-    }
-    $('#content').animate({scrollTop: (doc_position)}, 800, null);
-})
-
-$("#zzjs_net dt").click(function(){
-	$(this).parents("ul").find('dd').hide();
-	$(this).parent().children('dd').toggle();
-})
-
-</script>
-
-
-
-
+<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
