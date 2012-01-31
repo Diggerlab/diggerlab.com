@@ -1,0 +1,5 @@
+== start webrick server 
+# port: 8080
+# document_root: current folder
+
+ruby server.rb
