@@ -83,12 +83,13 @@ li {
 	float:right
 }
 .submenu {
-	width:130px;
+	width:auto;
 	height:20px;
 	line-height:20px;
 	background:#999;
 	color:#fff;
-	float:right
+	float:right;
+	text-align:center
 }
 .submenu a {
 	color:#fff;
