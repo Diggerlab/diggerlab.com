@@ -10,10 +10,10 @@ $('.team img').live('mouseenter', function(){
     event.preventDefault();
     var person_tag = $(this).parent('a').attr('href');
     if(person_tag == '#jobs'){
-        $('#content').animate({scrollTop: $('#jobs').offset().top + $("#content").scrollTop() -140 }, 400, null);
+        $('#content').animate({scrollTop: $('#jobs').offset().top + $("#content").scrollTop() -120 }, 400, null);
     }
     else{
-        $('#content').animate({scrollTop: $('#member_intro').offset().top + $("#content").scrollTop() -140 }, 400, null);
+        $('#content').animate({scrollTop: $('#member_intro').offset().top + $("#content").scrollTop() -120 }, 400, null);
         setTimeout(function(){
             $('#member_intro').slideUp('slow', function(){
                 $('#member_intro').empty().append($(person_tag).html()).slideDown();
@@ -29,7 +29,7 @@ $('.mainmenu a').click(function(event){
     var em = $(this).attr('href');
     var targetOffset = $(em).offset().top;
     if($(em).attr('id') != 'about'){
-        doc_position = targetOffset - 140 + $("#content").scrollTop();
+        doc_position = targetOffset - 120 + $("#content").scrollTop();
     }
     else{
         doc_position = 0;
