@@ -92,7 +92,7 @@ li {
 	text-align:center
 }
 .submenu a {
-	color:#333;
+	color:#e0e0e0;
 	padding:0 15px
 }
 .submenu a:hover {
@@ -301,7 +301,7 @@ li {
 	height:230px;
 	float:left;
 	margin-top:8px;
-	margin-bottom:80px;
+	margin-bottom:30px;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius:6px;
@@ -324,7 +324,7 @@ li {
 .advisors_banner {
 	width:100%;
 	background:url(../images/advisors_bg.jpg) no-repeat right top;
-	height:270px;
+	height:260px;
 	margin:30px 0 0 0;
 }
 .advi_name {
@@ -365,8 +365,6 @@ li {
  width:100％;
 }
 #zzjs_net li{
- margin:0 0 10px;
- padding:0 0 5px;
 }
 #zzjs_net dl{
  margin:0;
@@ -375,12 +373,16 @@ li {
 }
 #zzjs_net dt{
  cursor:pointer;
- line-height:24px;
- padding:0px 0 5px 0px;
+ line-height:28px;
+ padding:5px 0 5px 15px;
  border-bottom:1px #ccc dotted;
- font-size:16px;
+ font-size:14px;
+ background:url(../images/dot.gif) no-repeat 6px center;
  color:#7B2116;
 }
+#zzjs_net dt:hover{
+	background:url(../images/dot.gif) no-repeat 6px center #e0e0e0;
+	font-weight:bold}
 #zzjs_net dd{
  display:none;
  margin:0;
