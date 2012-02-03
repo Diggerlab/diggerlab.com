@@ -183,7 +183,7 @@ li {
 }
 .products_banner {
 	width:100%;
-	height:452px;
+	height:434px;
 	background:url(../images/product.jpg) no-repeat center top;
 	margin:30px auto
 }
@@ -301,7 +301,7 @@ li {
 	height:230px;
 	float:left;
 	margin-top:8px;
-	margin-bottom:30px;
+	margin-bottom:60px;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius:6px;
@@ -319,7 +319,7 @@ li {
 	font-size:14px;
 	line-height:26px
 }
-.team_js .txt img{ margin:8px 8px 0 0px; cursor:pointer}
+.team_js .txt img{ margin:8px 5px 0 0px; cursor:pointer}
 
 .advisors_banner {
 	width:100%;
@@ -334,9 +334,10 @@ li {
 .advisors_list {
 	width:411px;
 	height:100px;
-	background:url(../images/guwenbg.jpg) no-repeat right top;
+	background:url(../images/guwenbg.jpg) no-repeat 100px top;
 	color:#fff;
-	margin:15px 10px;
+	margin:15px  30px 10px 10px ;
+	float:left;
 }
 .advisors_list, .advisors_list a {
 	color:#fff;
@@ -350,7 +351,7 @@ li {
 	color:#e0e0e0
 }
 .advisors_js {
-	padding:8px;
+	padding:8px 10px;
 	float:left
 }
 .jobs_banner {
