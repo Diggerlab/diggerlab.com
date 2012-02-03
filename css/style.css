@@ -89,10 +89,11 @@ li {
 	background:#999;
 	color:#fff;
 	float:right;
-	text-align:center
+	text-align:center;
+	color:#ccc
 }
 .submenu a {
-	color:#e0e0e0;
+	color:#eee;
 	padding:0 15px
 }
 .submenu a:hover {
@@ -348,7 +349,8 @@ li {
 	float:left
 }
 .advi_txt {
-	color:#e0e0e0
+	color:#e0e0e0;
+	font-size:12px
 }
 .advisors_js {
 	padding:8px 10px;
