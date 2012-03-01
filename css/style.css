@@ -1,9 +1,12 @@
 @charset "utf-8";
+
 @font-face {
-	font-family: 'opens';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
+ font-family: OpenSans;
+ src:url(../font/OpenSans.ttf);
+}
+@font-face {
+ font-family: fzlthei;
+ src:url(../font/fzlthei.ttf);
 }
 /*
     全局样式定义
@@ -17,9 +20,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 body {
-	font-family:"opens", "微软雅黑", "Arial, Helvetica, sans-serif";
+	font-family:"OpenSans", "fzlthei", "微软雅黑", "Arial, Helvetica, sans-serif";
 	font-size:12px;
-	color:#333
+	color:#333;
+	font-weight:normal
 }
 img {
 	border:none
@@ -280,7 +284,7 @@ li {
 }
 .diggerlab_nami {
 	width:124px;
-	height:112px;
+	height:120px;
 	background:url(../images/member_bg.png) no-repeat -207px -237px;
 	position:absolute;
 	top:188px;
