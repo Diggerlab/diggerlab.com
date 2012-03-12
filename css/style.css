@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-@font-face {
+/*@font-face {
  font-family: OpenSans;
  src:url(../font/OpenSans.ttf);
 }
 @font-face {
  font-family: fzlthei;
  src:url(../font/fzlthei.ttf);
-}
+}*/
 /*
     全局样式定义
 */
@@ -20,7 +20,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 body {
-	font-family:"OpenSans", "fzlthei", "微软雅黑", "Arial, Helvetica, sans-serif";
+	font-family:"微软雅黑", "Helvetica Neue", "Helvetica Neue", "Helvetica", "Tahoma", "Arial";
 	font-size:12px;
 	color:#333;
 	font-weight:normal
