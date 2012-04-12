@@ -1,5 +1,5 @@
 set :application, "diggerlab_com"
-set :repository,  "git@project.diggerlab.com:diggerlab.com"
+set :repository,  "scm@project.diggerlab.com:diggerlab.com"
 set :branch, "master"
 set :user, "webuser"
 set :use_sudo, false
