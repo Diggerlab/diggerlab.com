@@ -252,8 +252,8 @@ li {
 	height:126px;
 	background:url(../images/member_bg.png) no-repeat -228px -45px;
 	position:absolute;
-	top:21px;
-	left:224px;
+	top:9px;
+	left:263px;
 	padding:22px 0 0 28px
 }
 .diggerlab_mike {
@@ -261,8 +261,8 @@ li {
 	height:127px;
 	background:url(../images/member_bg.png) no-repeat -437px 0px;
 	position:absolute;
-	top:-1px;
-	left:427px;
+	top:-6px;
+	left:524px;
 	padding:17px 0 0 18px
 }
 .diggerlab_blueduo {
@@ -270,8 +270,8 @@ li {
 	height:122px;
 	background:url(../images/member_bg.png) no-repeat 0px -175px;
 	position:absolute;
-	top:150px;
-	left:1px;
+	top:165px;
+	left:4px;
 	padding:25px 0 0 19px
 }
 .diggerlab_nami {
@@ -279,8 +279,8 @@ li {
 	height:120px;
 	background:url(../images/member_bg.png) no-repeat -207px -237px;
 	position:absolute;
-	top:188px;
-	left:200px;
+	top:198px;
+	left:229px;
 	padding:18px 0 0 13px
 }
 .diggerlab_ryan {
@@ -288,9 +288,18 @@ li {
 	height:118px;
 	background:url(../images/member_bg.png) no-repeat -411px -177px;
 	position:absolute;
-	top:164px;
-	left:410px;
+	top:167px;
+	left:463px;
 	padding:24px 0 0 13px
+}
+.diggerlab_chau {
+	width:116px;
+	height:123px;
+	background:url(../images/member_bg.png) no-repeat -578px -224px;
+	position:absolute;
+	top:200px;
+	left:680px;
+	padding:16px 0 0 13px
 }
 .team_big {
 	width:180px;
