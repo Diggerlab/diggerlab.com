@@ -10,8 +10,12 @@ set :current_path, "#{deploy_to}/current"
 set :releases_path, "#{deploy_to}/releases/"
 set :shared_path, "#{deploy_to}/shared"
 
-role :web, "58.215.187.231"                          # Your HTTP server, Apache/etc
-role :app, "58.215.187.231"                          # This may be the same as your `Web` server
+
+role :web, "219.232.236.252"                          # Your HTTP server, Apache/etc
+role :app, "219.232.236.252"                          # This may be the same as your `Web` server
+
+# role :web, "58.215.187.231"                          # Your HTTP server, Apache/etc
+# role :app, "58.215.187.231"                          # This may be the same as your `Web` server
 # role :db,  "192.168.1.128", :primary => true        # This is where Rails migrations will run
 # role :db,  "175.102.1.128"
 
