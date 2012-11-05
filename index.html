@@ -50,22 +50,127 @@
       <div class="clear"></div>
     </div>
     <div class="menu_title" id="products"><img src="images/pruduct.gif" alt="products" /></div>
-    <div class="products_banner" ><a href="http://moboq.com/" target="_blank"><img src="images/product.jpg" alt="product" /></a></div>
-    <div class="ssq_txt" style="font-size:16px">
-      <p style="padding-bottom:15px;">面包圈<a href="http://moboq.com/" target="_blank" class="fontred">(Moboq.com)</a>是首个基于位置的即时微问答服务， 它让你可以向当前正在任一地点的微博用户们提出问题。</p>
-      <p style="padding-bottom:15px;">比如，想去的餐厅是不是人多要排队， 影院某电影现在还有没有票， 商场某个牌子今天有没有打折。 甚至更严肃的场合 --- 某地震受灾区域现在有什么需求， 新闻现场正是什么情况. 没错， 就像我们把你“瞬间传送”到你关心的地点，让你可以向正在那里的路人打听你所关心的事。</p>
-      <p>我们希望在不远的将来， 你可以通过面包圈打听到这个世界上任何一个地方正在发生着什么。</p>
+    <div style="display:none">
+      <div class="products_banner" ><a href="http://moboq.com/" target="_blank"><img src="images/product.jpg" alt="product" /></a></div>
+      <div class="ssq_txt" style="font-size:16px">
+        <p style="padding-bottom:15px;">面包圈<a href="http://moboq.com/" target="_blank" class="fontred">(Moboq.com)</a>是首个基于位置的即时微问答服务， 它让你可以向当前正在任一地点的微博用户们提出问题。</p>
+        <p style="padding-bottom:15px;">比如，想去的餐厅是不是人多要排队， 影院某电影现在还有没有票， 商场某个牌子今天有没有打折。 甚至更严肃的场合 --- 某地震受灾区域现在有什么需求， 新闻现场正是什么情况. 没错， 就像我们把你“瞬间传送”到你关心的地点，让你可以向正在那里的路人打听你所关心的事。</p>
+        <p>我们希望在不远的将来， 你可以通过面包圈打听到这个世界上任何一个地方正在发生着什么。</p>
+      </div>
     </div>
+
+<SCRIPT language=javascript type=text/javascript>
+function ShowSub(id_num,num){ 
+ for(var i = 0;i <= 5;i++){
+  if(GetObj("S_Menu_" + id_num + i)){GetObj("S_Menu_" + id_num + i).className = '';}
+  if(GetObj("S_Cont_" + id_num + i)){GetObj("S_Cont_" + id_num + i).style.display = 'none';}
+ }
+ if(GetObj("S_Menu_" + id_num + num)){GetObj("S_Menu_" + id_num + num).className = 'active';}
+ if(GetObj("S_Cont_" + id_num + num)){GetObj("S_Cont_" + id_num + num).style.display = 'block';}
+}
+function GetObj(objName){
+ if(document.getElementById){
+  return eval('document.getElementById("' + objName + '")');
+ }else{
+  return eval('document.all.' + objName);
+ }
+}
+</SCRIPT>
+
+    <div class="product-menu">
+      <ul>
+        <li class="active" onclick=ShowSub(5,1) id="S_Menu_51">网页</li>
+        <li  onclick=ShowSub(5,2) id="S_Menu_52">移动手机</li>
+        <li  onclick=ShowSub(5,3) id="S_Menu_53">平板电脑</li>
+        <li  onclick=ShowSub(5,4) id="S_Menu_54">设计</li>
+      </ul>
+    </div>
+
+<!---web-->
+    <ul class="product-weblist" id="S_Cont_51">
+      <li>
+        <h3>面包圈</h3><span class="link"><a href="http://www.moboq.com/" target="_blank">http://www.moboq.com/</a></span>
+        <div class="clear"></div>
+        <p>面包圈是首个基于位置的即时微问答服务， 它让你可以向当前正在任一地点的微博用户们提出问题。<br/>
+比如，想去的餐厅是不是人多要排队， 影院某电影现在还有没有票， 商场某个牌子今天有没有打折。 甚至更严肃的场合 --- 某地震受灾区域现在有什么需求， 新闻现场正是什么情况. 没错， 就像我们把你“瞬间传送”到你关心的地点，让你可以向正在那里的路人打听你所关心的事。<br/>
+我们希望在不远的将来， 你可以通过面包圈打听到这个世界上任何一个地方正在发生着什么。</p>
+        <p>
+          <img src="images/web1.jpg" alt="" />
+        </p>
+      </li>
+    </ul>
+
+<!---mobile-->
+    <ul class="product-mobilelist hide" id="S_Cont_52">
+      <li>
+        <img src="images/moboq-icon.jpg" alt=""  class="app-cion"/>
+        <span class="floleft" style="width:870px">
+        <h3>面包圈</h3><span class="link"><a href="http://www.moboq.com/app" target="_blank">http://www.moboq.com/app</a></span>
+        <div class="clear"></div>
+        <p class="property">iPhone App  \  Android App </p>
+        </span>
+        <div class="clear"></div>
+        <p class="app-img">
+          <img src="images/moboq-app-an.jpg" alt="" />
+        </p>
+      </li>
+    </ul>
+
+<!---pad-->
+    <ul class="product-mobilelist hide" id="S_Cont_53">
+      <li>
+        <img src="images/pad-icon.gif" alt=""  class="app-cion"/>
+        <span class="floleft" style="width:870px">
+        <h3>视频聚合</h3>
+        <div class="clear"></div>
+        <p class="property">iPad App</p>
+        </span>
+        <div class="clear"></div>
+        <p class="app-img">
+          <img src="images/joy-pad.jpg" alt="" />
+        </p>
+      </li>
+    </ul>
+
+<!---design-->
+    <ul class="product-mobilelist hide" id="S_Cont_54">
+      <li>
+        <img src="images/android-icon.gif" alt=""  class="app-cion"/>
+        <span class="floleft" style="width:870px">
+        <h3>照片共享App</h3>
+        <div class="clear"></div>
+        <p class="property">Android App </p>
+        </span>
+        <div class="clear"></div>
+        <p class="app-img">
+          <img src="images/hgl-app-an.jpg" alt="" />
+        </p>
+      </li>
+      <li>
+        <img src="images/android-icon.gif" alt=""  class="app-cion"/>
+        <span class="floleft" style="width:870px">
+        <h3>酒吧娱乐工具</h3>
+        <div class="clear"></div>
+        <p class="property">Android App </p>
+        </span>
+        <div class="clear"></div>
+        <p class="app-img">
+          <img src="images/mn-app-an.jpg" alt="" />
+        </p>
+      </li>
+    </ul>
+
+
     <div class="menu_title" id="team"><img src="images/team.gif" alt="team" /></div>
     <div class="team">
       <div class="diggerlab_kan"><a href="#kan"><img src="images/kan.jpg" data-photo-org="images/kan.jpg"  data-photo-back="images/kan_1.jpg" alt="韩晓光" /></a> </div>
       <div class="diggerlab_yefeng"><a href="#yefeng"><img src="images/yefeng.jpg"  data-photo-org="images/yefeng.jpg"  data-photo-back="images/yefeng_1.jpg" alt="yefeng" /></a> </div>
       <div class="diggerlab_mike"><a href="#mike"><img src="images/mike.jpg" data-photo-org="images/mike.jpg"  data-photo-back="images/mike_1.jpg" alt="mike" /></a> </div>
       <div class="diggerlab_blueduo"><a href="#blueduo"><img src="images/blueduo.jpg" data-photo-org="images/blueduo.jpg"  data-photo-back="images/blueduo_1.jpg" alt="blueduo" /></a> </div>
-      <div class="diggerlab_nami"> <a href="#pan"><img src="images/pan.jpg" data-photo-org="images/pan.jpg"  data-photo-back="images/pan_1.jpg"  alt="pan" /></a></div>
+
       <div class="diggerlab_ryan"><a href="#miko"><img src="images/miko.jpg"  data-photo-org="images/miko.jpg"  data-photo-back="images/miko_1.jpg" alt="nami" /></a> </div>
       <div class="diggerlab_chau"><a href="#chau"><img src="images/chau.jpg"  data-photo-org="images/chau.jpg"  data-photo-back="images/chau_1.jpg" alt="chau" /></a> </div>
-       <div class="diggerlab_terry"><a href="#terry"><img src="images/terry.jpg"  data-photo-org="images/terry.jpg"  data-photo-back="images/terry_1.jpg" alt="terry" /></a> </div>
+       <div class="diggerlab_nami"><a href="#terry"><img src="images/terry.jpg"  data-photo-org="images/terry.jpg"  data-photo-back="images/terry_1.jpg" alt="terry" /></a> </div>
     </div>
     <div id="member_intro"> </div>
     <div id="kan" style="display:none"> <img src="images/kan_big.jpg" alt="kan" class="team_big" /> <span class="team_js">
@@ -101,12 +206,7 @@
         本科毕业于福建农林大学<br />
         <a href="http://weibo.com/blueduo" target="_blank"><img src="images/weibo_icon.jpg" alt="weibo" /></a> </p>
       </span> </div>
-     
-      <div id="pan" name="pan" style="display:none"> <img src="images/pan_big.jpg" alt="pan" class="team_big" /> <span class="team_js">
-      <p class="name">潘旭 (高级工程师)</p>
-      <p class="txt"> 2年手机开发工作经验<br />2年互联网后端工作经验<br />曾就职于LG电子<br />本科毕业于哈尔滨工业大学<br /> <a href="http://weibo.com/aubade" target="_blank"><img src="images/weibo_icon.jpg" alt="weibo" /></a> </p>
-      
-      </span> </div>
+
 
       <div id="miko" name="miko" style="display:none"> <img src="images/miko_big.jpg" alt="miko" class="team_big" /> <span class="team_js">
       <p class="name">金莹（视觉设计师） </p>

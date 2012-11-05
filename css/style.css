@@ -52,6 +52,9 @@ li {
 .fontred{
 	color:#990000
 	}
+.hide{
+	display: none;
+}
 /*
     header
 */
@@ -191,6 +194,94 @@ li {
 .ssq_txt p {
 	padding-bottom:8px
 }
+
+.product-menu{
+	width: 955px;
+	border: 1px solid #E6E6E7;
+	box-shadow: 0 1px 5px rgba(0,0,0,.1);
+	height: 48px;
+	margin: 30px auto;
+}
+.product-menu ul li{
+	float: left;
+	font-size: 18px;
+	line-height: 48px;
+	padding: 0 35px;
+	cursor: pointer;
+	border-right: 1px solid #E6E6E7;
+}
+.product-menu ul li:hover{
+	border-top: 4px solid #ccc;
+}
+.product-menu ul li.active{
+	border-top: 4px solid #424243;
+	color: #7A1F13
+}
+.product-weblist{
+	padding-left: 3px
+}
+.product-weblist li,.product-mobilelist li{
+	position: relative;
+	padding: 0 0 50px 15px;
+	width: 950px;
+}
+.product-weblist li:before{
+	background: #424243;
+	width: 4px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	content: ""
+}
+.product-weblist li h3,.product-mobilelist li h3{
+	font-size: 20px;
+	padding-bottom: 12px;
+	float: left;
+}
+.product-weblist li p{
+	font-size: 14px;
+	line-height: 24px;
+	padding:0 10px 10px 0;	
+}
+.product-weblist li .link,.product-mobilelist li .link{
+	background: #CCCCCC url(../images/link.gif) no-repeat left center;
+	color: #fff;
+	padding: 4px 10px 4px 30px;
+	float: left;
+	margin:3px 0 0 10px
+}
+.product-weblist li .link a,.product-mobilelist li .link a{
+	color: #fff
+}
+.product-weblist li .link a:hover,.product-mobilelist li .link a:hover{
+	color: #333
+}
+.product-weblist li p img{
+	margin:30px 0
+}
+
+
+.app-cion{
+	width:60px;
+	height: 60px;
+	float: left;
+	margin:0 20px 10px 0;
+}
+.property{
+	color: #999;
+	font-size: 14px
+}
+.app-img{
+	background: url(../images/line2.jpg) no-repeat 0 top; 
+	padding-top:50px;
+	margin:10px 0 30px 0
+}
+
+
+
+
+
 .team {
 	width:100%;
 	/*background:url(../images/team_bg.gif) no-repeat right 10px;*/
