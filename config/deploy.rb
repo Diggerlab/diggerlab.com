@@ -1,5 +1,9 @@
 set :application, "diggerlab_com"
-set :repository,  "scm@project.diggerlab.com:diggerlab.com"
+set :ssh_options, { :forward_agent => true }
+default_run_options[:pty] = true
+set :repository,  "git@github.com:Diggerlab/diggerlab.com.git"
+set :repository_cache, "git_cache"
+set :deploy_via, :remote_cache
 set :branch, "master"
 set :user, "webuser"
 set :use_sudo, false
