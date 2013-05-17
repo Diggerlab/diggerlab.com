@@ -23,6 +23,7 @@ namespace:deploy do
 
       after "deploy:restart", :roles => :app do
         #add any tasks in here that you want to run after the project is deployed
+        run "ln -s #{shared_path}/upload #{current_path}/public/upload"
         run "rm -rf #{release_path}.git"
         run "chmod -R 755 #{current_path}"
       end
