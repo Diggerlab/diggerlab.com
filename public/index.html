@@ -43,9 +43,8 @@
     <div class="menu_title"><img src="images/about.gif" alt="about us" /></div>
     <div style="margin-bottom:70px"> <img src="images/about.jpg" alt="diggerlab" class="diggerlab_img" />
       <div class="diggerlab_txt" style="font-size:16px">
-        <p>滴博网络科技(上海)有限公司是一家以技术为导向的互联网创业公司. 2011年成立于日本东京， 并于同年秋搬至中国上海。</p>
-        <p>我们的专长与兴趣集中在社交媒体 (Social Media)， 移动互联网 (Mobile Internet)， 与众包模式 (Crowdsourcing)， 滴博科技相信未来的互联网服务将是人类智慧与机器能力的结合。 </p>
-        <p>我们志在提供可以解决人们生活中实际日常问题的互联网服务。</p>
+        <p>滴博是一个崇尚创新、年轻而富有活力的移动互联网创业团队。团队集结于2011年底，现在常驻上海，专注于移动互联网娱乐应用的开发和运营。</p>
+        <p>滴博团队开发了面向女性用户的宠物养成游戏“我爱琪琪”（I Love CHiCHi）和基于地理位置的问答服务“面包圈”（Moboq）等全新概念的智能手机应用，在短时间内得到大量的用户，并且进入了多个国家的应用排行榜前十位。</p>
       </div>
       <div class="clear"></div>
     </div>
@@ -79,15 +78,35 @@ function GetObj(objName){
 
     <div class="product-menu">
       <ul>
-        <li class="active" onclick=ShowSub(5,1) id="S_Menu_51">网页</li>
-        <li  onclick=ShowSub(5,2) id="S_Menu_52">移动手机</li>
-        <li  onclick=ShowSub(5,3) id="S_Menu_53">平板电脑</li>
-        <li  onclick=ShowSub(5,4) id="S_Menu_54">设计</li>
+        <li class="active" onclick=ShowSub(5,1) id="S_Menu_51">游戏</li>
+        <li onclick=ShowSub(5,2) id="S_Menu_52">网页</li>
+        <li onclick=ShowSub(5,3) id="S_Menu_53">移动手机</li>
+        <li onclick=ShowSub(5,4) id="S_Menu_54">平板电脑</li>
+        <li onclick=ShowSub(5,5) id="S_Menu_55">设计</li>
       </ul>
     </div>
 
+<!---Mobile Game-->
+    <ul class="product-mobilelist" id="S_Cont_51">
+      <li>
+        <img src="images/chichi-icon.jpg" alt=""  class="app-cion"/>
+        <span class="floleft" style="width:870px">
+        <h3>我爱琪琪</h3><span class="link"><a href="http://chichiapp.com" target="_blank">http://chichiapp.com</a></span>
+        <div class="clear"></div>
+        <p class="property">iPhone App</p>
+        </span>
+        <div class="clear"></div>
+        <div class="app-img">
+          <p>我爱琪琪是一款全新的、面向女性用户的宠物养成手机游戏，结合了养成、小游戏、社交、以及工具。
+虽然风格是复古风，但其背后更多的是创新。<br/>
+我们希望能通过养成这一方式，带给女性用户更好的手机娱乐体验。</p>
+          <p><img src="images/chichi-app-an-1.jpg" alt="" /></p>
+          <p><img src="images/chichi-app-an-2.jpg" alt="" /></p>
+        </div>
+      </li>
+    </ul>
 <!---web-->
-    <ul class="product-weblist" id="S_Cont_51">
+    <ul class="product-weblist hide" id="S_Cont_52">
       <li>
         <h3>面包圈</h3><span class="link"><a href="http://www.moboq.com/" target="_blank">http://www.moboq.com/</a></span>
         <div class="clear"></div>
@@ -99,9 +118,8 @@ function GetObj(objName){
         </p>
       </li>
     </ul>
-
 <!---mobile-->
-    <ul class="product-mobilelist hide" id="S_Cont_52">
+    <ul class="product-mobilelist hide" id="S_Cont_53">
       <li>
         <img src="images/moboq-icon.jpg" alt=""  class="app-cion"/>
         <span class="floleft" style="width:870px">
@@ -117,7 +135,7 @@ function GetObj(objName){
     </ul>
 
 <!---pad-->
-    <ul class="product-mobilelist hide" id="S_Cont_53">
+    <ul class="product-mobilelist hide" id="S_Cont_54">
       <li>
         <img src="images/pad-icon.gif" alt=""  class="app-cion"/>
         <span class="floleft" style="width:870px">
@@ -133,7 +151,7 @@ function GetObj(objName){
     </ul>
 
 <!---design-->
-    <ul class="product-mobilelist hide" id="S_Cont_54">
+    <ul class="product-mobilelist hide" id="S_Cont_55">
       <li>
         <img src="images/android-icon.gif" alt=""  class="app-cion"/>
         <span class="floleft" style="width:870px">
@@ -171,7 +189,7 @@ function GetObj(objName){
 
        <div class="diggerlab_nami"><a href="#terry"><img src="images/terry.jpg"  data-photo-org="images/terry.jpg"  data-photo-back="images/terry_1.jpg" alt="terry" /></a> </div>
 
-      <div class="diggerlab_ryan"><a href="#miko"><img src="images/miko.jpg"  data-photo-org="images/miko.jpg"  data-photo-back="images/miko_1.jpg" alt="nami" /></a> </div>
+      <div class="diggerlab_ryan"><a href="#Fantasy"><img src="images/Fantasy.jpg"  data-photo-org="images/Fantasy.jpg"  data-photo-back="images/Fantasy_1.jpg" alt="Fantasy" /></a> </div>
 
       <div class="diggerlab_chau"><a href="#chau"><img src="images/chau.jpg"  data-photo-org="images/chau.jpg"  data-photo-back="images/chau_1.jpg" alt="chau" /></a> </div>
 
@@ -217,9 +235,9 @@ function GetObj(objName){
       
       </span> </div>
 
-      <div id="miko" name="miko" style="display:none"> <img src="images/miko_big.jpg" alt="miko" class="team_big" /> <span class="team_js">
-      <p class="name">金莹（视觉设计师） </p>
-      <p class="txt"> 2年界面视觉设计经验<br />目前就读于华东理工大学艺术设计专业硕士课程<br /> <a href="http://weibo.com/mikoking" target="_blank"><img src="images/weibo_icon.jpg" alt="weibo" /></a> </p>
+      <div id="Fantasy" name="Fantasy" style="display:none"> <img src="images/Fantasy_big.jpg" alt="Fantasy" class="team_big" /> <span class="team_js">
+      <p class="name">邢喆成（视觉设计师） </p>
+      <p class="txt">毕业于上海交通大学艺术设计专业<br />曾参与Popcap中国区植物大战僵尸的美术设计<br /> <a href="http://weibo.com/fxdailylife" target="_blank"><img src="images/weibo_icon.jpg" alt="weibo" /></a> </p>
      
       </span> </div>
 
