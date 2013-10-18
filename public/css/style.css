@@ -321,6 +321,10 @@ li {
 	top:15px;
 	left:18px;
 }
+.member_ingfo.mune {
+  top:15px;
+  left:18px;
+}
 .member_ingfo.blueduo {
 	top:25px;
 	left:19px;
@@ -359,6 +363,15 @@ li {
 	top:-6px;
 	left:524px;
 	padding:17px 0 0 18px
+}
+.diggerlab_mune{
+	width:123px;
+	height:127px;
+	background:url(../images/member_bg.png) no-repeat 0px -175px;
+	position:absolute;
+	top:0px;
+	left:750px;
+	padding:25px 0 0 18px
 }
 .diggerlab_blueduo {
 	width:126px;
