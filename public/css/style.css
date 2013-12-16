@@ -289,7 +289,7 @@ li {
 .team {
 	width:100%;
 	/*background:url(../images/team_bg.gif) no-repeat right 10px;*/
-	height:360px;
+	height:550px;
 	margin:30px 0 30px 0;
 	position:relative;
 	border-bottom:1px solid #e0e0e0
@@ -337,12 +337,20 @@ li {
 	top:24px;
 	left:13px;
 }
+.member_ingfo.daneil {
+	top:18px;
+	left:13px;
+}
+.member_ingfo.hector {
+	top:18px;
+	left:13px;
+}
 .diggerlab_kan {
 	width:122px;
 	height:119px;
 	background:url(../images/member_bg.png) no-repeat -31px -6px;
 	position:absolute;
-	top:2px;
+	top:45px;
 	left:31px;
 	padding:17px 0 0 16px
 }
@@ -360,7 +368,7 @@ li {
 	height:127px;
 	background:url(../images/member_bg.png) no-repeat -437px 0px;
 	position:absolute;
-	top:-6px;
+	top:9px;
 	left:524px;
 	padding:17px 0 0 18px
 }
@@ -369,7 +377,7 @@ li {
 	height:127px;
 	background:url(../images/member_bg.png) no-repeat 0px -175px;
 	position:absolute;
-	top:0px;
+	top:45px;
 	left:750px;
 	padding:25px 0 0 18px
 }
@@ -378,7 +386,7 @@ li {
 	height:122px;
 	background:url(../images/member_bg.png) no-repeat 0px -175px;
 	position:absolute;
-	top:165px;
+	top:255px;
 	left:4px;
 	padding:25px 0 0 19px
 }
@@ -396,8 +404,8 @@ li {
 	height:118px;
 	background:url(../images/member_bg.png) no-repeat -411px -177px;
 	position:absolute;
-	top:167px;
-	left:463px;
+	top:189px;
+	left:449px;
 	padding:24px 0 0 13px
 }
 .diggerlab_chau {
@@ -405,7 +413,7 @@ li {
 	height:123px;
 	background:url(../images/member_bg.png) no-repeat -578px -224px;
 	position:absolute;
-	top:200px;
+	top:255px;
 	left:680px;
 	padding:16px 0 0 13px
 }
@@ -416,6 +424,24 @@ li {
 	position:absolute;
 	top:10px;
 	left:770px;
+	padding:25px 0 0 19px
+}
+.diggerlab_daneil {
+	width:126px;
+	height:122px;
+	background:url(../images/member_bg.png) no-repeat 0px -175px;
+	position:absolute;
+	top:395px;
+	left:190px;
+	padding:25px 0 0 19px
+}
+.diggerlab_hector {
+	width:126px;
+	height:122px;
+	background:url(../images/member_bg.png) no-repeat -578px -224px;
+	position:absolute;
+	top:395px;
+	left:500px;
 	padding:25px 0 0 19px
 }
 .team_big {
