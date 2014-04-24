@@ -289,7 +289,7 @@ li {
 .team {
 	width:100%;
 	/*background:url(../images/team_bg.gif) no-repeat right 10px;*/
-	height:550px;
+	height:350px;
 	margin:30px 0 30px 0;
 	position:relative;
 	border-bottom:1px solid #e0e0e0
@@ -346,76 +346,76 @@ li {
 	left:13px;
 }
 .diggerlab_kan {
-	width:122px;
-	height:119px;
-	background:url(../images/member_bg.png) no-repeat -31px -6px;
-	position:absolute;
-	top:45px;
-	left:31px;
-	padding:17px 0 0 16px
-}
-.diggerlab_yefeng {
-	width:129px;
-	height:126px;
-	background:url(../images/member_bg.png) no-repeat -228px -45px;
-	position:absolute;
-	top:9px;
-	left:263px;
-	padding:22px 0 0 28px
+  width:122px;
+  height:119px;
+  background:url(../images/member_bg.png) no-repeat -31px -6px;
+  position:absolute;
+  top:2px;
+  left:31px;
+  padding:17px 0 0 16px
 }
 .diggerlab_mike {
-	width:123px;
-	height:127px;
-	background:url(../images/member_bg.png) no-repeat -437px 0px;
-	position:absolute;
-	top:9px;
-	left:524px;
-	padding:17px 0 0 18px
-}
-.diggerlab_mune{
-	width:123px;
-	height:127px;
-	background:url(../images/member_bg.png) no-repeat 0px -175px;
-	position:absolute;
-	top:45px;
-	left:750px;
-	padding:25px 0 0 18px
-}
-.diggerlab_blueduo {
-	width:126px;
-	height:122px;
-	background:url(../images/member_bg.png) no-repeat 0px -175px;
-	position:absolute;
-	top:255px;
-	left:4px;
-	padding:25px 0 0 19px
-}
-.diggerlab_nami {
-	width:124px;
-	height:120px;
-	background:url(../images/member_bg.png) no-repeat -207px -237px;
-	position:absolute;
-	top:198px;
-	left:229px;
-	padding:18px 0 0 13px
-}
-.diggerlab_ryan {
-	width:117px;
-	height:118px;
-	background:url(../images/member_bg.png) no-repeat -411px -177px;
-	position:absolute;
-	top:189px;
-	left:449px;
-	padding:24px 0 0 13px
+  width:129px;
+  height:126px;
+  background:url(../images/member_bg.png) no-repeat -228px -45px;
+  position:absolute;
+  top:9px;
+  left:263px;
+  padding:22px 0 0 28px
 }
 .diggerlab_chau {
-	width:116px;
-	height:123px;
-	background:url(../images/member_bg.png) no-repeat -578px -224px;
-	position:absolute;
-	top:255px;
-	left:680px;
-	padding:16px 0 0 13px
+  width:123px;
+  height:127px;
+  background:url(../images/member_bg.png) no-repeat -437px 0px;
+  position:absolute;
+  top:-6px;
+  left:524px;
+  padding:17px 0 0 18px
+}
+.diggerlab_mune{
+  width:123px;
+  height:127px;
+  background:url(../images/member_bg.png) no-repeat 0px -175px;
+  position:absolute;
+  top:0px;
+  left:750px;
+  padding:25px 0 0 18px
+}
+.diggerlab_nami {
+  width:126px;
+  height:122px;
+  background:url(../images/member_bg.png) no-repeat 0px -175px;
+  position:absolute;
+  top:165px;
+  left:4px;
+  padding:25px 0 0 19px
+}
+.diggerlab_ryan {
+  width:124px;
+  height:120px;
+  background:url(../images/member_bg.png) no-repeat -207px -237px;
+  position:absolute;
+  top:198px;
+  left:229px;
+  padding:18px 0 0 13px
+}
+.diggerlab_daneil {
+  width:117px;
+  height:118px;
+  background:url(../images/member_bg.png) no-repeat -411px -177px;
+  position:absolute;
+  top:167px;
+  left:463px;
+  padding:24px 0 0 13px
+}
+.diggerlab_hector {
+  width:116px;
+  height:123px;
+  background:url(../images/member_bg.png) no-repeat -578px -224px;
+  position:absolute;
+  top:200px;
+  left:680px;
+  padding:16px 0 0 13px
 }
 .diggerlab_terry {
 	width:126px;
@@ -426,7 +426,7 @@ li {
 	left:770px;
 	padding:25px 0 0 19px
 }
-.diggerlab_daneil {
+.diggerlab_daneil1 {
 	width:126px;
 	height:122px;
 	background:url(../images/member_bg.png) no-repeat 0px -175px;
@@ -435,7 +435,7 @@ li {
 	left:190px;
 	padding:25px 0 0 19px
 }
-.diggerlab_hector {
+.diggerlab_hector1 {
 	width:126px;
 	height:122px;
 	background:url(../images/member_bg.png) no-repeat -578px -224px;
