@@ -591,3 +591,17 @@ li {
 	font-size:14px; 
 	width:100%
 }
+.showcase {
+  margin:0px;
+  padding: 0px;
+}
+
+.showcase li{
+  display: inline;
+  margin: 0px;
+  padding: 0px 15px 0 0;
+}
+.show {
+  width: 280px;
+  border: 8px solid #F3F3F3;
+}
