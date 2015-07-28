@@ -13,7 +13,7 @@ set :user, ENV["DEPLOY_USER"]
 set :use_sudo, false
 set :scm, :git
 
-set :deploy_to, "/home/webuser/www/diggerlab.com"
+set :deploy_to, "/opt/www/diggerlab.com"
 set :current_path, "#{deploy_to}/current"
 set :releases_path, "#{deploy_to}/releases/"
 set :shared_path, "#{deploy_to}/shared"
