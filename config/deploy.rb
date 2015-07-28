@@ -7,7 +7,7 @@ set :ssh_options, { :forward_agent => true }
 default_run_options[:pty] = true
 set :repository,  "git@github.com:Diggerlab/diggerlab.com.git"
 set :repository_cache, "git_cache"
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 set :branch, "master"
 set :user, ENV["DEPLOY_USER"]
 set :use_sudo, false
